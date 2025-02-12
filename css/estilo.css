@@ -1,0 +1,257 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+.limite{
+    max-width: 1280px;
+    margin:0 auto;
+}
+
+body{
+   
+    font-family: "Roboto", sans-serif;
+
+}
+
+header{
+    background-color: white;
+    
+}
+
+.topo{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 15px 0;
+}
+
+img{
+    max-width:100%;
+}
+
+#bt-menu{
+    width:50px;
+    height:50px;
+    color:#52B788;
+    position:absolute;
+    top:5px;
+    right:5px;
+    display:none;
+}
+
+#menu-check{
+    display:none;
+}
+
+.btnwhats{
+    background-color: #52B788;
+    border-radius: 50px;
+    color:white;
+    font-size:18px;
+    width:350px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    justify-self: end;
+}
+.btnwhats span{
+    font-size:30px;
+    display: block;
+}
+.servicosgrupo{
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-top: 10px;
+}
+.servicosgrupo article{
+    text-align: center;
+}
+.servicosgrupo article img{
+   
+}
+
+@media(max-width:768px){
+    .servicosgrupo{
+        grid-column-end: 4;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-top: 10px;
+        row-gap: 20px;
+    } 
+
+}
+
+.titulo{
+    font-size: 20px;
+}
+
+.servicos{
+    padding: 20px;
+}
+.primeira{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:20px;
+}
+nav menu{
+    display:flex;
+    list-style:none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:5px;
+}
+nav menu a{
+    display:block;
+    background-color: #52B788;
+    padding:5px;
+    color:white;
+    text-decoration: none;
+}
+
+
+.topo h1{
+    grid-row: span 2;
+}
+.banner{
+    background-color: #FF9F1C;
+   
+    
+}
+.conteudobanner{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.textobanner{
+    font-size:20px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.servicos{
+    background-color: white;
+}
+
+.veterinario{
+    background-color: #D8F3DC;
+    padding:20px;
+}
+
+.veterinariosgrupo {
+   margin-top:20px;
+    display:flex;
+    justify-content:space-around;
+}
+
+@media(max-width:425px){
+    nav menu{
+        flex-direction: column;
+    }
+    .topo{
+        display:grid;
+        grid-template-columns: 1fr;
+        padding: 15px 0;
+        gap: 20px;
+    }
+    
+.btnwhats{
+    font-size:16px;    
+    padding: 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    justify-self: center;
+    align-self: center;
+}
+.btnwhats span{
+    font-size:20px;
+    display: block;
+}
+
+.veterinariosgrupo {
+    margin-top:20px;
+     display:flex;
+     flex-direction: column;
+     justify-content:space-around;
+     align-items: center;
+     gap: 20px;
+ }
+ #bt-menu{
+    display: block;
+ }
+header nav{
+    height:0;
+    overflow: hidden;
+}
+
+#menu-check:checked ~ nav{
+    height:180px;
+}
+
+}
+
+
+
+
+.planos{
+    padding:20px;
+    background-color: #1B4332;
+   
+}
+ 
+.planosgrupo{
+    display: flex;
+    justify-content: space-around;
+    color: #D8F3DC;
+    text-align: center;
+}
+
+.planosgrupo img{
+   
+    height:150px;
+    object-fit: cover;
+}
+
+.veterinario img{
+    width: 150px;
+    height: 150px;
+}
+
+.animais img{
+    background-color: white;
+    width: 100%;
+}
+
+.rodape{
+    display:grid;
+    grid-template-columns: 1fr 100px;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+}
+
+.whatsapp{
+    display:flex;
+    justify-content: flex-end;
+}
+
+
+.whatsapp img{
+    width:50px;
+}
+
+footer{
+    background-color: #52B788;
+
+}
